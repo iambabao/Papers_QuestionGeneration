@@ -2,15 +2,22 @@
 
 - [Paper List of Question Generation](#paper-list-of-question-generation)
   - [Survey](#survey)
-  - [Basic Models](#basic-models)
+  - [Basic QG](#basic-qg)
     - [2017](#2017)
-  - [Triple to Question](#triple-to-question)
+    - [2018](#2018)
+  - [Question Type & Answer Modeling](#question-type--answer-modeling)
+    - [2018](#2018-1)
+  - [Paragraph Level](#paragraph-level)
+    - [2018](#2018-2)
+  - [Conversational QG](#conversational-qg)
+    - [2018](#2018-3)
+  - [KB QG](#kb-qg)
     - [2016](#2016)
     - [2017](#2017-1)
-  - [Paragraph Level Information](#paragraph-level-information)
-    - [2018](#2018)
+  - [Visiual QG](#visiual-qg)
+    - [2018](#2018-4)
   - [Others](#others)
-    - [year](#year)
+    - [2018](#2018-5)
 
 ---
 
@@ -27,7 +34,7 @@ Details.
 </p></blockquote>
 </details>
 
-## Basic Models
+## Basic QG
 [:arrow_up:](#paper-list-of-question-generation)
 
 ### 2017
@@ -62,7 +69,75 @@ Dataset: SQuAD.
 </p></blockquote>
 </details>
 
-## Triple to Question
+### 2018
+
+<details>
+<summary>
+<a href="https://www.aclweb.org/anthology/W18-2609.pdf">Neural Models for Key Phrase Extraction and Question Generation</a>, ACL-WS
+<i>Sandeep Subramanian, Tong Wang, Xingdi Yuan, Adam Trischler</i>
+</summary>
+<blockquote><p align="justify">
+Dataset: SQuAD. Use Pointer Network for key phrase extraction. Propose a multi-span F1 score.
+</p></blockquote>
+</details>
+
+## Question Type & Answer Modeling
+[:arrow_up:](#paper-list-of-question-generation)
+
+### 2018
+
+<details>
+<summary>
+<a href="https://www.aclweb.org/anthology/D18-1427.pdf">Answer-focused and Position-aware Neural Question Generation
+</a>, EMNLP
+<i>Xingwu Sun, Jing Liu, Yajuan Lyu, Wei He, Yanjun Ma, Shi Wang</i>
+</summary>
+<blockquote><p align="justify">
+Dataset: SQuAD. Add a question word vocabulary for question type.
+</p></blockquote>
+</details>
+
+## Paragraph Level
+[:arrow_up:](#paper-list-of-question-generation)
+
+### 2018
+
+<details>
+<summary>
+<a href="https://www.aclweb.org/anthology/P18-1177.pdf">Harvesting Paragraph-Level Question-Answer Pairs from Wikipedia</a>, ACL
+<i>Xinya Du, Claire Cardie</i>
+</summary>
+<blockquote><p align="justify">
+Dataset: SQuAD. Use a tagging model to select answer. Seq2Seq model with coreference resolution for question generation. Release a 1M QA data.
+</p></blockquote>
+</details>
+
+<details>
+<summary>
+<a href="https://www.aclweb.org/anthology/D18-1424.pdf">Paragraph-level Neural Question Generation with Maxout Pointer and Gated Self-attention Networks</a>, EMNLP
+<i>Yao Zhao, Xiaochuan Ni, Yuanyuan Ding, Qifa Ke</i>
+</summary>
+<blockquote><p align="justify">
+Dataset: SQuAD. Fusion gate and maxout pointer mechanism.
+</p></blockquote>
+</details>
+
+## Conversational QG
+[:arrow_up:](#paper-list-of-question-generation)
+
+### 2018
+
+<details>
+<summary>
+<a href="https://www.aclweb.org/anthology/P18-1204.pdf">Learning to Ask Questions in Open-domain Conversational Systems with Typed Decoders</a>, ACL
+<i>Yansen Wang, Chenyi Liu, Minlie Huang, Liqiang Nie</i>
+</summary>
+<blockquote><p align="justify">
+Divide words into three difference type: interrorgative, topic word and ordinary word. The final distribution is weighted by different types.
+</p></blockquote>
+</details>
+
+## KB QG
 [:arrow_up:](#paper-list-of-question-generation)
 
 ### 2016
@@ -89,32 +164,32 @@ Dataset: Community QA. Seq2Seq.
 </p></blockquote>
 </details>
 
-## Paragraph Level Information
+## Visiual QG
 [:arrow_up:](#paper-list-of-question-generation)
 
 ### 2018
 
 <details>
 <summary>
-<a href="https://www.aclweb.org/anthology/P18-1177.pdf">Harvesting Paragraph-Level Question-Answer Pairs from Wikipedia</a>, ACL
-<i>Xinya Du, Claire Cardie</i>
+<a href="https://www.aclweb.org/anthology/C18-1150.pdf">A Reinforcement Learning Framework for Natural Question Generation using Bi-discriminators</a>, COLING
+<i>Zhihao Fan, Zhongyu Wei, Shouxin Wang, Yang P. Liu, Xuanjing Huang</i>
 </summary>
 <blockquote><p align="justify">
-Dataset: SQuAD. Use a tagging model to select answer. Seq2Seq model with coreference resolution for question generation. Release a 1M QA data.
+TODO
 </p></blockquote>
 </details>
 
 ## Others
 [:arrow_up:](#paper-list-of-question-generation)
 
-### year
+### 2018
 
 <details>
 <summary>
-<a href="https://github.com/">Paper Name</a>, Conference
-<i>Author list</i>
+<a href="https://www.aclweb.org/anthology/D18-1429.pdf">Towards a Better Metric for Evaluating Question Generation Systems</a>, EMNLP
+<i>Preksha Nema, Mitesh M. Khapra</i>
 </summary>
 <blockquote><p align="justify">
-Details.
+Propose a new metric for modling the answerability of generated question. The proposed answerability is the weighted F1 score of different types of information. It can be add to any current metric, but need to rune the weights manually.
 </p></blockquote>
 </details>
