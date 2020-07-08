@@ -14,10 +14,11 @@
   - [KB QG](#kb-qg)
     - [2016](#2016)
     - [2017](#2017-1)
-  - [Visiual QG](#visiual-qg)
     - [2018](#2018-4)
-  - [Others](#others)
+  - [Visiual QG](#visiual-qg)
     - [2018](#2018-5)
+  - [Others](#others)
+    - [2018](#2018-6)
 
 ---
 
@@ -88,12 +89,41 @@ Dataset: SQuAD. Use Pointer Network for key phrase extraction. Propose a multi-s
 
 <details>
 <summary>
-<a href="https://www.aclweb.org/anthology/D18-1427.pdf">Answer-focused and Position-aware Neural Question Generation
-</a>, EMNLP
+<a href="https://www.aclweb.org/anthology/D18-1427.pdf">Answer-focused and Position-aware Neural Question Generation</a>, EMNLP
 <i>Xingwu Sun, Jing Liu, Yajuan Lyu, Wei He, Yanjun Ma, Shi Wang</i>
 </summary>
 <blockquote><p align="justify">
 Dataset: SQuAD. Add a question word vocabulary for question type.
+</p></blockquote>
+</details>
+
+<details>
+<summary>
+<a href="https://openreview.net/pdf?id=rkRR1ynIf">Aspect-Based Question Generation</a>, ICLR-WS
+<i>Wenpeng Hu, Bing Liu, Jinwen Ma, Dongyan Zhao, Rui Yan</i>
+</summary>
+<blockquote><p align="justify">
+Dataset: AQAD. Aspect and question type.
+</p></blockquote>
+</details>
+
+<details>
+<summary>
+<a href="https://www.ijcai.org/Proceedings/2018/0632.pdf">Teaching Machines to Ask Questions</a>, IJCAI
+<i>Kaichun Yao, Libo Zhang, Tiejian Luo, Lili Tao, Yanjun Wu</i>
+</summary>
+<blockquote><p align="justify">
+Dataset: SQuAD. Use latent variables to model the distribution of question type. GAN + RL.
+</p></blockquote>
+</details>
+
+<details>
+<summary>
+<a href="https://www.aclweb.org/anthology/N18-2090.pdf">Leveraging Context Information for Natural Question Generation</a>, NAACL
+<i>Linfeng Song, Zhiguo Wang, Wael Hamza, Yue Zhang, Daniel Gildea</i>
+</summary>
+<blockquote><p align="justify">
+Dataset: SQuAD. Match context vector with question representation.
 </p></blockquote>
 </details>
 
@@ -161,6 +191,18 @@ Dataset: SimpleQuestion, FreeBase. Seq2Seq with TransE, attention and placeholde
 </summary>
 <blockquote><p align="justify">
 Dataset: Community QA. Seq2Seq.
+</p></blockquote>
+</details>
+
+### 2018
+
+<details>
+<summary>
+<a href="https://www.aclweb.org/anthology/N18-1020.pdf">Zero-Shot Question Generation from Knowledge Graphs for Unseen Predicates and Entity Types</a>, NAACL
+<i>Hady ElSahar, Christophe Gravier, Frédérique Laforest</i>
+</summary>
+<blockquote><p align="justify">
+Dataset: SimpleQuestions. Seq2Seq with textual information. POS copy mechanism.
 </p></blockquote>
 </details>
 
