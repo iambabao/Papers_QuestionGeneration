@@ -5,16 +5,21 @@
   - [Basic QG](#basic-qg)
     - [2017](#2017)
     - [2018](#2018)
+    - [2019](#2019)
   - [Question Type & Answer Modeling](#question-type--answer-modeling)
     - [2018](#2018-1)
+    - [2019](#2019-1)
   - [Paragraph Level](#paragraph-level)
     - [2018](#2018-2)
+    - [2019](#2019-2)
   - [Conversational QG](#conversational-qg)
     - [2018](#2018-3)
   - [KB QG](#kb-qg)
     - [2016](#2016)
     - [2017](#2017-1)
     - [2018](#2018-4)
+  - [Open QG](#open-qg)
+    - [2019](#2019-3)
   - [Visiual QG](#visiual-qg)
     - [2018](#2018-5)
   - [Others](#others)
@@ -82,6 +87,18 @@ Dataset: SQuAD. Use Pointer Network for key phrase extraction. Propose a multi-s
 </p></blockquote>
 </details>
 
+### 2019
+
+<details>
+<summary>
+<a href="https://www.aclweb.org/anthology/P19-1415.pdf">Learning to Ask Unanswerable Questions for Machine Reading Comprehension</a>, ACL
+<i>Haichao Zhu, Li Dong, Furu Wei, Wenhui Wang, Bing Qin, Ting Liu</i>
+</summary>
+<blockquote><p align="justify">
+Dataset: SQuAD. Generate unanswerable question.
+</p></blockquote>
+</details>
+
 ## Question Type & Answer Modeling
 [:arrow_up:](#paper-list-of-question-generation)
 
@@ -127,6 +144,18 @@ Dataset: SQuAD. Match context vector with question representation.
 </p></blockquote>
 </details>
 
+### 2019
+
+<details>
+<summary>
+<a href="https://www.aaai.org/ojs/index.php/AAAI/article/view/4629">Improving Neural Question Generation Using Answer Separation</a>, AAAI
+<i>Yanghoon Kim, Hwanhee Lee, Joongbo Shin, Kyomin Jung</i>
+</summary>
+<blockquote><p align="justify">
+Dataset: SQuAD. Take answer from passage and use two separate encoder for passage and answer. Use attention to select key information from answer. Use retrieval style word generator.
+</p></blockquote>
+</details>
+
 ## Paragraph Level
 [:arrow_up:](#paper-list-of-question-generation)
 
@@ -149,6 +178,18 @@ Dataset: SQuAD. Use a tagging model to select answer. Seq2Seq model with corefer
 </summary>
 <blockquote><p align="justify">
 Dataset: SQuAD. Fusion gate and maxout pointer mechanism.
+</p></blockquote>
+</details>
+
+### 2019
+
+<details>
+<summary>
+<a href="https://www.aclweb.org/anthology/P19-1224.pdf">Generating Question-Answer Hierarchies</a>, ACL
+<i>Kalpesh Krishna, Mohit Iyyer</i>
+</summary>
+<blockquote><p align="justify">
+Propose a new dataset SQUASH for hierarchical question generation. SQUASH represents document as QA pairs with hierarchical information.
 </p></blockquote>
 </details>
 
@@ -203,6 +244,21 @@ Dataset: Community QA. Seq2Seq.
 </summary>
 <blockquote><p align="justify">
 Dataset: SimpleQuestions. Seq2Seq with textual information. POS copy mechanism.
+</p></blockquote>
+</details>
+
+## Open QG
+[:arrow_up:](#paper-list-of-question-generation)
+
+### 2019
+
+<details>
+<summary>
+<a href="https://www.aclweb.org/anthology/P19-1497.pdf">Asking the Crowd: Question Analysis, Evaluation and Generation for Open Discussion on Online Forums</a>, ACL
+<i>Zi Chai, Xinyu Xing, Xiaojun Wan, Bo Huang</i>
+</summary>
+<blockquote><p align="justify">
+Analyze how language use affect the open-answered question. Based on the data analysis, this paper proposes some language use features that will greatly affects the answer receives. Dataset OQGenD is released for open question generation.
 </p></blockquote>
 </details>
 
