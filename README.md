@@ -99,6 +99,36 @@ Dataset: SQuAD. Generate unanswerable question.
 </p></blockquote>
 </details>
 
+<details>
+<summary>
+<a href="https://www.aclweb.org/anthology/K19-1076.pdf">Putting the Horse Before the Cart: A Generator-Evaluator Framework for Question Generation from Text</a>, ACL
+<i>Vishwajeet Kumar, Ganesh Ramakrishnan, Yuan-Fang Li</i>
+</summary>
+<blockquote><p align="justify">
+Dataset: SQuAD. Generation-Evaluation framework. Reinforcement leraning with question sentence overlap score (QSS) and answer overlap sccore (ANSS).
+</p></blockquote>
+</details>
+
+<details>
+<summary>
+<a href="https://www.aclweb.org/anthology/D19-1253.pdf">Addressing Semantic Drift in Question Generation for Semi-Supervised Question Answering</a>, EMNLP
+<i>Shiyue Zhang, Mohit Bansal</i>
+</summary>
+<blockquote><p align="justify">
+Dataset: SQuAD. Generation-Evaluation framework. Reinforcement leraning with question paraphrasing probability (QPP) score and question answer probability (QAP) score.
+</p></blockquote>
+</details>
+
+<details>
+<summary>
+<a href="https://www.aclweb.org/anthology/D19-1614.pdf">Generating Highly Relevant Questions</a>, EMNLP
+<i>Jiazuo Qiu, Deyi Xiong</i>
+</summary>
+<blockquote><p align="justify">
+Dataset: SQuAD. Generation-Scoring framework. Partial copy mechanism and QA-based scoring.
+</p></blockquote>
+</details>
+
 ## Question Type & Answer Modeling
 [:arrow_up:](#paper-list-of-question-generation)
 
@@ -130,7 +160,7 @@ Dataset: AQAD. Aspect and question type.
 <i>Kaichun Yao, Libo Zhang, Tiejian Luo, Lili Tao, Yanjun Wu</i>
 </summary>
 <blockquote><p align="justify">
-Dataset: SQuAD. Use latent variables to model the distribution of question type. GAN + RL.
+Dataset: SQuAD. Use latent variables to model the distribution of question type. Generation-Evaluation framework. GAN + RL.
 </p></blockquote>
 </details>
 
@@ -153,6 +183,16 @@ Dataset: SQuAD. Match context vector with question representation.
 </summary>
 <blockquote><p align="justify">
 Dataset: SQuAD. Take answer from passage and use two separate encoder for passage and answer. Use attention to select key information from answer. Use retrieval style word generator.
+</p></blockquote>
+</details>
+
+<details>
+<summary>
+<a href="https://www.aclweb.org/anthology/D19-1317.pdf">Improving Question Generation With to the Point Context</a>, EMNLP
+<i>Jing-jing Li, Yifan Gao, Lidong Bing, Irwin King, Michael R. Lyu</i>
+</summary>
+<blockquote><p align="justify">
+Dataset: SQuAD. Use OpenIE to improve the information from answer. Use dual-copy mechanism to copy word from both sentence and answer information.
 </p></blockquote>
 </details>
 
