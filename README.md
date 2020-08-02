@@ -24,6 +24,7 @@
     - [2018](#2018-5)
   - [Others](#others)
     - [2018](#2018-6)
+    - [2019](#2019-4)
 
 ---
 
@@ -129,6 +130,26 @@ Dataset: SQuAD. Generation-Scoring framework. Partial copy mechanism and QA-base
 </p></blockquote>
 </details>
 
+<details>
+<summary>
+<a href="https://www.aclweb.org/anthology/D19-1326.pdf">Let’s Ask Again: Refine Network for Automatic Question Generation</a>, EMNLP
+<i>Preksha Nema, Akash Kumar Mohankumar, Mitesh M. Khapra, Balaji Vasan Srinivasan, Balaraman Ravindran</i>
+</summary>
+<blockquote><p align="justify">
+Dataset: SQuAD, HOTPOT. Use two decoder to refine the generated question with reward.
+</p></blockquote>
+</details>
+
+<details>
+<summary>
+<a href="https://www.aclweb.org/anthology/D19-1337.pdf">Multi-Task Learning with Language Modeling for Question Generation</a>, EMNLP
+<i>Wenjie Zhou, Minghua Zhang, Yunfang Wu</i>
+</summary>
+<blockquote><p align="justify">
+Dataset: SQuAD, MARCO. Multi-task learning with language modeling.
+</p></blockquote>
+</details>
+
 ## Question Type & Answer Modeling
 [:arrow_up:](#paper-list-of-question-generation)
 
@@ -193,6 +214,16 @@ Dataset: SQuAD. Take answer from passage and use two separate encoder for passag
 </summary>
 <blockquote><p align="justify">
 Dataset: SQuAD. Use OpenIE to improve the information from answer. Use dual-copy mechanism to copy word from both sentence and answer information.
+</p></blockquote>
+</details>
+
+<details>
+<summary>
+<a href="https://www.aclweb.org/anthology/D19-1622.pdf">Question-type Driven Question Generation</a>, EMNLP
+<i>Wenjie Zhou, Minghua Zhang, Yunfang Wu</i>
+</summary>
+<blockquote><p align="justify">
+Dataset: SQuAD, MARCO. Generate question type word at first.
 </p></blockquote>
 </details>
 
@@ -329,5 +360,17 @@ TODO
 </summary>
 <blockquote><p align="justify">
 Propose a new metric for modling the answerability of generated question. The proposed answerability is the weighted F1 score of different types of information. It can be add to any current metric, but need to rune the weights manually.
+</p></blockquote>
+</details>
+
+### 2019
+
+<details>
+<summary>
+<a href="https://www.aclweb.org/anthology/D19-3.pdf#page=185">ParaQG: A System for Generating Questions and Answers from Paragraphs</a>, EMNLP
+<i>Vishwajeet Kumar, Sivaanandh Muneeswaran, Ganesh Ramakrishnan, Yuan-Fang Li</i>
+</summary>
+<blockquote><p align="justify">
+System paper.
 </p></blockquote>
 </details>
