@@ -52,7 +52,7 @@ Details.
 <i>Xinya Du, Junru Shao, Claire Cardie</i>
 </summary>
 <blockquote><p align="justify">
-Dataset: SQuAD. Seq2Seq. Both sentence level and paragraph level.
+Dataset: SQuAD. Answer-agnostic question generation. Basic Seq2Seq model. Both sentence level and paragraph level.
 </p></blockquote>
 </details>
 
@@ -62,17 +62,17 @@ Dataset: SQuAD. Seq2Seq. Both sentence level and paragraph level.
 <i>Xinya Du, Claire Cardie</i>
 </summary>
 <blockquote><p align="justify">
-Dataset: SQuAD. Use a tagging model to select question-worthy sentence. Seq2Seq model for question generation. No answer span.
+Dataset: SQuAD. Answer-agnostic question generation. Use tagging model to select question-worthy sentence. Use Seq2Seq model for question generation.
 </p></blockquote>
 </details>
 
 <details>
 <summary>
-<a href="http://tcci.ccf.org.cn/conference/2017/papers/1084.pdf">Neural Question Generation from Text_A Preliminary Study</a>, NLPCC
+<a href="http://tcci.ccf.org.cn/conference/2017/papers/1084.pdf">Neural Question Generation from Text: A Preliminary Study</a>, NLPCC
 <i>Qingyu Zhou, Nan Yang, Furu Wei, Chuanqi Tan, Hangbo Bao, Ming Zhou</i>
 </summary>
 <blockquote><p align="justify">
-Dataset: SQuAD.
+Dataset: SQuAD. Basic Seq2Seq model.
 </p></blockquote>
 </details>
 
@@ -84,7 +84,7 @@ Dataset: SQuAD.
 <i>Sandeep Subramanian, Tong Wang, Xingdi Yuan, Adam Trischler</i>
 </summary>
 <blockquote><p align="justify">
-Dataset: SQuAD. Use Pointer Network for key phrase extraction. Propose a multi-span F1 score.
+Dataset: SQuAD. Use Pointer Network for key phrase extraction. Use Seq2Seq model for question generation. Propose a multi-span F1 score.
 </p></blockquote>
 </details>
 
@@ -96,7 +96,7 @@ Dataset: SQuAD. Use Pointer Network for key phrase extraction. Propose a multi-s
 <i>Haichao Zhu, Li Dong, Furu Wei, Wenhui Wang, Bing Qin, Ting Liu</i>
 </summary>
 <blockquote><p align="justify">
-Dataset: SQuAD. Generate unanswerable question.
+Dataset: SQuAD. Generate unanswerable question. Pair-Seq2Seq model.
 </p></blockquote>
 </details>
 
@@ -136,7 +136,7 @@ Dataset: SQuAD. Generation-Scoring framework. Partial copy mechanism and QA-base
 <i>Preksha Nema, Akash Kumar Mohankumar, Mitesh M. Khapra, Balaji Vasan Srinivasan, Balaraman Ravindran</i>
 </summary>
 <blockquote><p align="justify">
-Dataset: SQuAD, HOTPOT. Use two decoder to refine the generated question with reward.
+Dataset: SQuAD, HOTPOT. Use another decoder to refine the generated question with reward.
 </p></blockquote>
 </details>
 
@@ -147,6 +147,16 @@ Dataset: SQuAD, HOTPOT. Use two decoder to refine the generated question with re
 </summary>
 <blockquote><p align="justify">
 Dataset: SQuAD, MARCO. Multi-task learning with language modeling.
+</p></blockquote>
+</details>
+
+<details>
+<summary>
+<a href="https://aaai.org/ojs/index.php/AAAI/article/view/6449/6305">Neural Question Generation with Answer Pivot</a>, AAAI
+<i>Bingning Wang, Xiao-chuan Wang, Ting Tao, Qi Zhang, Jing-fang Xu</i>
+</summary>
+<blockquote><p align="justify">
+Dataset: SQuAD. Answer-agnostic question generation.
 </p></blockquote>
 </details>
 
@@ -227,6 +237,16 @@ Dataset: SQuAD, MARCO. Generate question type word at first.
 </p></blockquote>
 </details>
 
+<details>
+<summary>
+<a href="https://aaai.org/ojs/index.php/AAAI/article/view/6366/6222">Improving Question Generation with Sentence-Level Semantic Matching and Answer Position Inferring</a>, AAAI
+<i>Xiyao Ma, Qile Zhu, Yanlin Zhou, Xiao-qiong Li, Dapeng Wu</i>
+</summary>
+<blockquote><p align="justify">
+Dataset: SQuAD. Multi task learning with semantic matching classification and question answering.
+</p></blockquote>
+</details>
+
 ## Paragraph Level
 [:arrow_up:](#paper-list-of-question-generation)
 
@@ -261,6 +281,16 @@ Dataset: SQuAD. Fusion gate and maxout pointer mechanism.
 </summary>
 <blockquote><p align="justify">
 Propose a new dataset SQUASH for hierarchical question generation. SQUASH represents document as QA pairs with hierarchical information.
+</p></blockquote>
+</details>
+
+<details>
+<summary>
+<a href="https://aaai.org/ojs/index.php/AAAI/article/view/6440/6296">Capturing Greater Context for Question Generation</a>, AAAI
+<i>Anh Tuan Luu, Darsh J. Shah, Regina Barzilay</i>
+</summary>
+<blockquote><p align="justify">
+Dataset: SQuAD, MARCO, NewsQA.
 </p></blockquote>
 </details>
 
@@ -302,7 +332,7 @@ Dataset: SimpleQuestion, FreeBase. Seq2Seq with TransE, attention and placeholde
 <i>Mitesh M. Khapra, Dinesh Raghu, Sachindra Joshi, Sathish Reddy</i>
 </summary>
 <blockquote><p align="justify">
-Dataset: Community QA. Seq2Seq.
+Dataset: Community QA. Basic Seq2Seq model.
 </p></blockquote>
 </details>
 
@@ -372,5 +402,25 @@ Propose a new metric for modling the answerability of generated question. The pr
 </summary>
 <blockquote><p align="justify">
 System paper.
+</p></blockquote>
+</details>
+
+<details>
+<summary>
+<a href="https://www.aclweb.org/anthology/N19-1237.pdf">Evaluating Rewards for Question Generation Models</a>, EMNLP
+<i>Tom Hosking, Sebastian Riedel</i>
+</summary>
+<blockquote><p align="justify">
+RL based methods perform worse when evaluated by human.
+</p></blockquote>
+</details>
+
+<details>
+<summary>
+<a href="https://aaai.org/ojs/index.php/AAAI/article/view/6258/6114">How to Ask Better Questions? A Large-Scale Multi-Domain Dataset for Rewriting Ill-Formed Questions</a>, AAAI
+<i>Zewei Chu, Mingda Chen, Jiehua Chen, Miaosen Wang, Kevin Gimpel, Manaal Faruqui, Xiance Si</i>
+</summary>
+<blockquote><p align="justify">
+A question rewriting dataset.
 </p></blockquote>
 </details>
