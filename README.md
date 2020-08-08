@@ -6,14 +6,18 @@
     - [2017](#2017)
     - [2018](#2018)
     - [2019](#2019)
+    - [2020](#2020)
   - [Question Type & Answer Modeling](#question-type--answer-modeling)
     - [2018](#2018-1)
     - [2019](#2019-1)
-  - [Paragraph Level](#paragraph-level)
+    - [2020](#2020-1)
+  - [Paragraph Level QG](#paragraph-level-qg)
     - [2018](#2018-2)
     - [2019](#2019-2)
-  - [Conversational QG](#conversational-qg)
+    - [2020](#2020-2)
+  - [Sequential QG](#sequential-qg)
     - [2018](#2018-3)
+    - [2020](#2020-3)
   - [KB QG](#kb-qg)
     - [2016](#2016)
     - [2017](#2017-1)
@@ -25,6 +29,7 @@
   - [Others](#others)
     - [2018](#2018-6)
     - [2019](#2019-4)
+    - [2020](#2020-4)
 
 ---
 
@@ -150,6 +155,8 @@ Dataset: SQuAD, MARCO. Multi-task learning with language modeling.
 </p></blockquote>
 </details>
 
+### 2020
+
 <details>
 <summary>
 <a href="https://aaai.org/ojs/index.php/AAAI/article/view/6449/6305">Neural Question Generation with Answer Pivot</a>, AAAI
@@ -157,6 +164,17 @@ Dataset: SQuAD, MARCO. Multi-task learning with language modeling.
 </summary>
 <blockquote><p align="justify">
 Dataset: SQuAD. Answer-agnostic question generation.
+</p></blockquote>
+</details>
+
+<details>
+<summary>
+<a href="https://www.aclweb.org/anthology/2020.acl-main.545.pdf">How to Ask Good Questions? Try to Leverage Paraphrases
+</a>, ACL
+<i>Xin Jia, Wenjie Zhou, Xu Sun, Yunfang Wu</i>
+</summary>
+<blockquote><p align="justify">
+Dataset: SQuAD, MARCO. Multi task learning with language modeling and paraphrase generation. Sentence paraphrase is obtained by back translation. A modified loss with multiple reference questions.
 </p></blockquote>
 </details>
 
@@ -237,6 +255,8 @@ Dataset: SQuAD, MARCO. Generate question type word at first.
 </p></blockquote>
 </details>
 
+### 2020
+
 <details>
 <summary>
 <a href="https://aaai.org/ojs/index.php/AAAI/article/view/6366/6222">Improving Question Generation with Sentence-Level Semantic Matching and Answer Position Inferring</a>, AAAI
@@ -247,7 +267,17 @@ Dataset: SQuAD. Multi task learning with semantic matching classification and qu
 </p></blockquote>
 </details>
 
-## Paragraph Level
+<details>
+<summary>
+<a href="https://www.aclweb.org/anthology/2020.acl-main.601.pdf">Low-Resource Generation of Multi-hop Reasoning Questions</a>, ACL
+<i>Jianxing Yu, Wei Liu, Shuang Qiu, Qinliang Su, Ka Wang, Xiaojun Quan, Jian Yin</i>
+</summary>
+<blockquote><p align="justify">
+Dataset: HotpotQA. Propose to employ the neural hidden semi-Markov model to learn the question segmentation pattern. The pattern is then used for multi-hop question generation. Reinforcement learning to deal with the limited labeled data problem.
+</p></blockquote>
+</details>
+
+## Paragraph Level QG
 [:arrow_up:](#paper-list-of-question-generation)
 
 ### 2018
@@ -284,6 +314,8 @@ Propose a new dataset SQUASH for hierarchical question generation. SQUASH repres
 </p></blockquote>
 </details>
 
+### 2020
+
 <details>
 <summary>
 <a href="https://aaai.org/ojs/index.php/AAAI/article/view/6440/6296">Capturing Greater Context for Question Generation</a>, AAAI
@@ -294,7 +326,7 @@ Dataset: SQuAD, MARCO, NewsQA.
 </p></blockquote>
 </details>
 
-## Conversational QG
+## Sequential QG
 [:arrow_up:](#paper-list-of-question-generation)
 
 ### 2018
@@ -306,6 +338,19 @@ Dataset: SQuAD, MARCO, NewsQA.
 </summary>
 <blockquote><p align="justify">
 Divide words into three difference type: interrorgative, topic word and ordinary word. The final distribution is weighted by different types.
+</p></blockquote>
+</details>
+
+### 2020
+
+<details>
+<summary>
+<a href="https://www.aclweb.org/anthology/2020.acl-main.21.pdf">Learning to Ask More: Semi-Autoregressive Sequential Question Generation under Dual-Graph Interaction
+</a>, ACL
+<i>Zi Chai, Xiaojun Wan</i>
+</summary>
+<blockquote><p align="justify">
+Dataset: CoQA. Focus on sequence question generation and construct a new sequence question generation dataset.
 </p></blockquote>
 </details>
 
@@ -415,6 +460,8 @@ RL based methods perform worse when evaluated by human.
 </p></blockquote>
 </details>
 
+### 2020
+
 <details>
 <summary>
 <a href="https://aaai.org/ojs/index.php/AAAI/article/view/6258/6114">How to Ask Better Questions? A Large-Scale Multi-Domain Dataset for Rewriting Ill-Formed Questions</a>, AAAI
@@ -422,5 +469,15 @@ RL based methods perform worse when evaluated by human.
 </summary>
 <blockquote><p align="justify">
 A question rewriting dataset.
+</p></blockquote>
+</details>
+
+<details>
+<summary>
+<a href="https://www.aclweb.org/anthology/2020.acl-main.651.pdf">ClarQ: A large-scale and diverse dataset for Clarification Question Generation</a>, ACL
+<i>Zewei Chu, Mingda Chen, Jiehua Chen, Miaosen Wang, Kevin Gimpel, Manaal Faruqui, Xiance Si</i>
+</summary>
+<blockquote><p align="justify">
+Use down-sampling and up-sampling to classify clarification question and build a dataset for clarification question generation.
 </p></blockquote>
 </details>
